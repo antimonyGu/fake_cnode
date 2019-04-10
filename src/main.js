@@ -3,9 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Axios from 'axios'
 Vue.config.productionTip = false
-
+Vue.prototype.$http = Axios      //在原型链上挂载axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
